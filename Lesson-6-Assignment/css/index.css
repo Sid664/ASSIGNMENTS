@@ -1,0 +1,2183 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1440px) {
+    #mySidepanel {
+        display: none;
+    }
+
+    .openbtn {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+        background-color: #ffffff;
+    }
+
+    .banner-img {
+        width: 798px;
+        height: 599px;
+        background-size: cover;
+        background-image: url(../photos/Seastar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: padding-box;
+        padding: 0px;
+        border: 3px solid red;
+        border-radius: 10px;
+        box-shadow: 13px 17px 6px #fd060659;
+    }
+
+    .title {
+        color: rgb(143, 188, 139);
+
+        font-size: 66px;
+        margin: 24px auto 24px auto;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Righteous", cursive;
+        font-weight: 400;
+        -webkit-text-stroke: 2px rgb(46, 139, 87);
+    }
+
+    main.main {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 20px;
+        background-clip: padding-box;
+        font-size: 25px;
+        line-height: 2;
+        border: 6px double rgb(65, 105, 225);
+        border-radius: 22px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+    }
+
+    .main p {
+        margin-bottom: 20px;
+    }
+
+    main.main a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    .navigation {
+        width: 88%;
+        height: auto;
+        margin: auto;
+        padding: 21px;
+        text-align: center;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+
+    .navigation ul a {
+        text-decoration: none;
+    }
+
+    .navigation ul li {
+        font-size: 19px;
+        line-height: 2.5;
+    }
+
+    a.an {
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+
+    .nav-head {
+        font-size: 44px;
+    }
+
+    nav.navigation ul li {
+        margin-top: 12px;
+    }
+
+    .color1 {
+        color: rgb(255, 0, 0);
+    }
+
+    .color2 {
+        color: rgb(255, 165, 0);
+    }
+
+    .color3 {
+        color: rgb(0, 0, 255);
+    }
+
+    .color4 {
+        color: rgb(128, 128, 128);
+    }
+
+    .color5 {
+        color: rgb(165, 42, 42);
+    }
+
+    .star {
+        font-size: 77px;
+        animation: myanimation 44s infinite;
+    }
+
+    @keyframes myanimation {
+        0% {
+            color: rgb(255, 0, 0);
+        }
+
+        12% {
+            color: rgb(255, 192, 203);
+        }
+
+        24% {
+            color: rgb(255, 165, 0);
+        }
+
+        36% {
+            color: rgb(128, 0, 128);
+        }
+
+        48% {
+            color: rgb(0, 0, 255);
+        }
+
+        60% {
+            color: rgb(165, 42, 42);
+        }
+
+        72% {
+            color: rgb(255, 255, 255);
+        }
+
+        100% {
+            color: rgb(128, 128, 128);
+        }
+    }
+
+    .intro {
+        border: 3px solid rgb(46, 139, 87);
+        background-color: rgb(143, 188, 139);
+        border-radius: 4px;
+        color: rgb(128, 0, 128);
+        padding: 6px;
+    }
+
+    .intro:hover,
+    .intro:focus {
+        background-color: #020000;
+        color: #ffffff;
+        border: none;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link:hover,
+    .link:focus {
+        background-color: #020000;
+        color: #ffffff;
+        padding: 6px;
+        border-radius: 3px;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link {
+        color: rgb(32, 178, 170);
+    }
+
+    #copyright {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    #copyright a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    #copyright a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    footer {
+        background: #e6e2c8;
+        width: 80%;
+        max-width: 960px;
+        min-height: 3.75em;
+        margin: 2em auto;
+        padding: 1.25em;
+        border-radius: 0.313em;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        line-height: 1.5em;
+        color: #292929;
+    }
+
+    .ribbon a {
+        color: #ffffff;
+        font-size: 17px;
+    }
+
+    .ribbon {
+        position: relative;
+        padding: 0 0.5em;
+        font-size: 2em;
+        margin: 0 0 0 -0.625em;
+        line-height: 1.875em;
+        color: #e6e2c8;
+        border-radius: 0 0.156em 0.156em 0;
+        background: rgb(123, 159, 199);
+        box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .ribbon:before,
+    .ribbon:after {
+        position: absolute;
+        content: "";
+        display: block;
+    }
+
+    .ribbon:before {
+        width: 0.469em;
+        height: 100%;
+        padding: 0 0 0.438em;
+        top: 0;
+        left: -0.469em;
+        background: inherit;
+        border-radius: 0.313em 0 0 0.313em;
+    }
+
+    .ribbon:after {
+        width: 0.313em;
+        height: 0.313em;
+        background: rgba(0, 0, 0, 0.35);
+        bottom: -0.313em;
+        left: -0.313em;
+        border-radius: 0.313em 0 0 0.313em;
+        box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    #mySidepanel {
+        display: none;
+    }
+
+    .openbtn {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 660px;
+        background-color: #ffffff;
+    }
+
+    .banner-img {
+        width: 690px;
+        height: 518px;
+        background-size: cover;
+
+        background-image: url(../photos/Seastar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: padding-box;
+        padding: 0px;
+        border: 3px solid red;
+        border-radius: 10px;
+        box-shadow: 13px 17px 6px #fd060659;
+    }
+
+    .title {
+        color: rgb(143, 188, 139);
+
+        font-size: 55px;
+        margin: 12px auto 24px auto;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Righteous", cursive;
+        font-weight: 400;
+        -webkit-text-stroke: 2px rgb(46, 139, 87);
+    }
+
+    main.main {
+        width: 95%;
+        height: auto;
+        margin: auto;
+        padding: 20px;
+        background-clip: padding-box;
+        font-size: 22px;
+        line-height: 2;
+        border: 2px dashed rgb(65, 105, 225);
+        border-radius: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .main p {
+        margin-bottom: 15px;
+    }
+
+    main.main a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    .navigation {
+        width: 88%;
+        height: auto;
+        margin: auto;
+        padding: 21px;
+        text-align: center;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+
+    .navigation ul li {
+        font-size: 19px;
+        line-height: 2;
+    }
+
+    .navigation ul a {
+        text-decoration: none;
+    }
+
+    a.an {
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+
+    .nav-head {
+        font-size: 44px;
+    }
+
+    nav.navigation ul li {
+        margin-top: 12px;
+    }
+
+    .color1 {
+        color: rgb(255, 0, 0);
+    }
+
+    .color2 {
+        color: rgb(255, 165, 0);
+    }
+
+    .color3 {
+        color: rgb(0, 0, 255);
+    }
+
+    .color4 {
+        color: rgb(128, 128, 128);
+    }
+
+    .color5 {
+        color: rgb(165, 42, 42);
+    }
+
+    .star {
+        font-size: 66px;
+        animation: myanimation 44s infinite;
+    }
+
+    @keyframes myanimation {
+        0% {
+            color: rgb(255, 0, 0);
+        }
+
+        12% {
+            color: rgb(255, 192, 203);
+        }
+
+        24% {
+            color: rgb(255, 165, 0);
+        }
+
+        36% {
+            color: rgb(128, 0, 128);
+        }
+
+        48% {
+            color: rgb(0, 0, 255);
+        }
+
+        60% {
+            color: rgb(165, 42, 42);
+        }
+
+        72% {
+            color: rgb(255, 255, 255);
+        }
+
+        100% {
+            color: rgb(128, 128, 128);
+        }
+    }
+
+    .intro {
+        border: 3px solid rgb(46, 139, 87);
+        background-color: rgb(143, 188, 139);
+        border-radius: 4px;
+        color: rgb(128, 0, 128);
+        padding: 6px;
+    }
+
+    .intro:hover,
+    .intro:focus {
+        background-color: #020000;
+        color: #ffffff;
+        border: none;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link:hover,
+    .link:focus {
+        background-color: #020000;
+        color: #ffffff;
+        padding: 6px;
+        border-radius: 3px;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link {
+        color: rgb(32, 178, 170);
+    }
+
+    #copyright {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #copyright a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    #copyright a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    footer {
+        background: #e6e2c8;
+        width: 80%;
+        max-width: 960px;
+        min-height: 3.75em;
+        margin: 2em auto;
+        padding: 1.25em;
+        border-radius: 0.313em;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        line-height: 1.5em;
+        color: #292929;
+    }
+
+    .ribbon a {
+        color: #ffffff;
+        font-size: 17px;
+    }
+
+    .ribbon {
+        position: relative;
+        padding: 0 0.5em;
+        font-size: 2em;
+        margin: 0 0 0 -0.625em;
+        line-height: 1.875em;
+        color: #e6e2c8;
+        border-radius: 0 0.156em 0.156em 0;
+        background: rgb(123, 159, 199);
+        box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .ribbon:before,
+    .ribbon:after {
+        position: absolute;
+        content: "";
+        display: block;
+    }
+
+    .ribbon:before {
+        width: 0.469em;
+        height: 100%;
+        padding: 0 0 0.438em;
+        top: 0;
+        left: -0.469em;
+        background: inherit;
+        border-radius: 0.313em 0 0 0.313em;
+    }
+
+    .ribbon:after {
+        width: 0.313em;
+        height: 0.313em;
+        background: rgba(0, 0, 0, 0.35);
+        bottom: -0.313em;
+        left: -0.313em;
+        border-radius: 0.313em 0 0 0.313em;
+        box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+    #mySidepanel {
+        display: none;
+    }
+
+    .openbtn {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 588px;
+        background-color: #ffffff;
+    }
+
+    .banner-img {
+        width: 600px;
+        height: 518px;
+
+        background-size: cover;
+
+        background-image: url(../photos/Seastar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: padding-box;
+        padding: 0px;
+        border: 3px solid rgb(255, 0, 0);
+        border-radius: 10px;
+        box-shadow: 13px 17px 6px #fd060659;
+    }
+
+    .title {
+        color: rgb(143, 188, 139);
+
+        font-size: 47px;
+        margin: 12px auto 24px auto;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Righteous", cursive;
+        font-weight: 400;
+        -webkit-text-stroke: 2px rgb(46, 139, 87);
+    }
+
+    main.main {
+        display: block;
+        width: 93%;
+        height: auto;
+        margin: auto;
+        padding: 15px;
+        background-clip: padding-box;
+        font-size: 18px;
+        line-height: 2;
+        border: 2px dashed rgb(65, 105, 225);
+
+        border-radius: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .main p {
+        margin-bottom: 15px;
+    }
+
+    main.main a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    .navigation {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 21px;
+        text-align: center;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+
+    .navigation ul {
+        line-height: 2;
+    }
+
+    .navigation ul a {
+        text-decoration: none;
+    }
+
+    .navigation ul li {
+        font-size: 20px;
+    }
+
+    .nav-head {
+        font-size: 33px;
+        margin-bottom: 33px;
+    }
+
+    nav.navigation ul li {
+        margin-top: 12px;
+    }
+
+    .color1 {
+        color: rgb(255, 0, 0);
+    }
+
+    .color2 {
+        color: rgb(255, 165, 0);
+    }
+
+    .color3 {
+        color: rgb(0, 0, 255);
+    }
+
+    .color4 {
+        color: rgb(128, 128, 128);
+    }
+
+    .color5 {
+        color: rgb(165, 42, 42);
+    }
+
+    .star {
+        font-size: 66px;
+        display: inline;
+        animation: myanimation 44s infinite;
+    }
+
+    @keyframes myanimation {
+        0% {
+            color: rgb(255, 0, 0);
+        }
+
+        12% {
+            color: rgb(255, 192, 203);
+        }
+
+        24% {
+            color: rgb(255, 165, 0);
+        }
+
+        36% {
+            color: rgb(128, 0, 128);
+        }
+
+        48% {
+            color: rgb(0, 0, 255);
+        }
+
+        60% {
+            color: rgb(165, 42, 42);
+        }
+
+        72% {
+            color: rgb(255, 255, 255);
+        }
+
+        100% {
+            color: rgb(128, 128, 128);
+        }
+    }
+
+    .intro {
+        border: 3px solid rgb(46, 139, 87);
+        background-color: rgb(143, 188, 139);
+        border-radius: 4px;
+        color: rgb(128, 0, 128);
+        padding: 6px;
+    }
+
+    .intro:hover,
+    .intro:focus {
+        background-color: #020000;
+        color: #ffffff;
+        border: none;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link:hover,
+    .link:focus {
+        background-color: #020000;
+        color: #ffffff;
+        padding: 6px;
+        border-radius: 3px;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link {
+        color: rgb(32, 178, 170);
+    }
+
+    #copyright {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        word-wrap: break-word;
+        padding: 15px;
+    }
+
+    #copyright a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    #copyright a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    footer {
+        background: #e6e2c8;
+        width: 80%;
+        max-width: 960px;
+        min-height: 3.75em;
+        margin: 2em auto;
+        padding: 1.25em;
+        border-radius: 0.313em;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        line-height: 1.5em;
+        color: #292929;
+    }
+
+    .ribbon a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 17px;
+    }
+
+    .ribbon {
+        position: relative;
+        padding: 0 0.5em;
+        font-size: 2em;
+        margin: 0 0 0 -0.625em;
+        line-height: 1.875em;
+        color: #e6e2c8;
+        border-radius: 0 0.156em 0.156em 0;
+        background: rgb(123, 159, 199);
+        box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .ribbon:before,
+    .ribbon:after {
+        position: absolute;
+        content: "";
+        display: block;
+    }
+
+    .ribbon:before {
+        width: 0.469em;
+        height: 100%;
+        padding: 0 0 0.438em;
+        top: 0;
+        left: -0.469em;
+        background: inherit;
+        border-radius: 0.313em 0 0 0.313em;
+    }
+
+    .ribbon:after {
+        width: 0.313em;
+        height: 0.313em;
+        background: rgba(0, 0, 0, 0.35);
+        bottom: -0.313em;
+        left: -0.313em;
+        border-radius: 0.313em 0 0 0.313em;
+        box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media only screen and (min-width: 518px) and (max-width: 600px) {
+    .sidepanel {
+        width: 0;
+
+        position: absolute;
+        z-index: 1;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 488px;
+        background-color: #ffffff;
+    }
+
+    .banner-img {
+        width: 100%;
+        max-width: 88vw;
+        max-height: 424px;
+        height: 100%;
+
+        background-size: cover;
+
+        background-image: url(../photos/Seastar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: padding-box;
+        padding: 0px;
+        border: 3px solid rgb(255, 0, 0);
+        border-radius: 10px;
+        box-shadow: 13px 17px 6px #fd060659;
+    }
+
+    .title {
+        color: rgb(143, 188, 139);
+
+        font-size: 7vw;
+        margin: 12px auto 24px auto;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Righteous", cursive;
+        font-weight: 400;
+        -webkit-text-stroke: 1.6px rgb(46, 139, 87);
+    }
+
+    main.main {
+        display: block;
+        width: 93%;
+        height: auto;
+        margin: auto;
+        padding: 15px;
+        background-clip: padding-box;
+        font-size: 16px;
+        line-height: 2;
+        border: 2px dashed rgb(65, 105, 225);
+
+        border-radius: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .main p {
+        margin-bottom: 15px;
+    }
+
+    main.main a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    .navigation {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 21px;
+        text-align: center;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+
+    .navigation ul {
+        line-height: 2;
+    }
+
+    .navigation ul a {
+        text-decoration: none;
+    }
+
+    .navigation ul li {
+        font-size: 3.2vw;
+    }
+
+    .nav-head {
+        font-size: 5.7vw;
+        margin-bottom: 33px;
+    }
+
+    nav.navigation ul li {
+        margin-top: 12px;
+    }
+
+    .color1 {
+        color: rgb(255, 0, 0);
+    }
+
+    .color2 {
+        color: rgb(255, 165, 0);
+    }
+
+    .color3 {
+        color: rgb(0, 0, 255);
+    }
+
+    .color4 {
+        color: rgb(128, 128, 128);
+    }
+
+    .color5 {
+        color: rgb(165, 42, 42);
+    }
+
+    .star {
+        font-size: 13vw;
+        display: inline;
+        animation: myanimation 44s infinite;
+    }
+
+    @keyframes myanimation {
+        0% {
+            color: rgb(255, 0, 0);
+        }
+
+        12% {
+            color: rgb(255, 192, 203);
+        }
+
+        24% {
+            color: rgb(255, 165, 0);
+        }
+
+        36% {
+            color: rgb(128, 0, 128);
+        }
+
+        48% {
+            color: rgb(0, 0, 255);
+        }
+
+        60% {
+            color: rgb(165, 42, 42);
+        }
+
+        72% {
+            color: rgb(255, 255, 255);
+        }
+
+        100% {
+            color: rgb(128, 128, 128);
+        }
+    }
+
+    .intro {
+        border: 3px solid rgb(46, 139, 87);
+        background-color: rgb(143, 188, 139);
+        border-radius: 4px;
+        color: rgb(128, 0, 128);
+        padding: 6px;
+    }
+
+    .intro:hover,
+    .intro:focus {
+        background-color: #020000;
+        color: #ffffff;
+        border: none;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link:hover,
+    .link:focus {
+        background-color: #020000;
+        color: #ffffff;
+        padding: 6px;
+        border-radius: 3px;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link {
+        color: rgb(32, 178, 170);
+    }
+
+    #copyright {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 2.5vw;
+        word-wrap: break-word;
+        padding: 15px;
+    }
+
+    #copyright a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    #copyright a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    footer {
+        background: #e6e2c8;
+        width: 80%;
+        max-width: 960px;
+        min-height: 3.75em;
+        margin: 2em auto;
+        padding: 1.25em;
+        border-radius: 0.313em;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        line-height: 1.5em;
+        color: #292929;
+    }
+
+    .ribbon a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 3vw;
+    }
+
+    .ribbon {
+        position: relative;
+        padding: 0 0.5em;
+        font-size: 2em;
+        margin: 0 0 0 -0.625em;
+        line-height: 1.875em;
+        color: #e6e2c8;
+        border-radius: 0 0.156em 0.156em 0;
+        background: rgb(123, 159, 199);
+        box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .ribbon:before,
+    .ribbon:after {
+        position: absolute;
+        content: "";
+        display: block;
+    }
+
+    .ribbon:before {
+        width: 0.469em;
+        height: 100%;
+        padding: 0 0 0.438em;
+        top: 0;
+        left: -0.469em;
+        background: inherit;
+        border-radius: 0.313em 0 0 0.313em;
+    }
+
+    .ribbon:after {
+        width: 0.313em;
+        height: 0.313em;
+        background: rgba(0, 0, 0, 0.35);
+        bottom: -0.313em;
+        left: -0.313em;
+        border-radius: 0.313em 0 0 0.313em;
+        box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 517px) {
+    .sidepanel {
+        width: 0;
+
+        position: absolute;
+        z-index: 1;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 388px;
+        background-color: #ffffff;
+    }
+
+    .banner-img {
+        width: 100%;
+        max-width: 85vw;
+        max-height: 330px;
+        height: 100%;
+
+        background-size: cover;
+
+        background-image: url(../photos/Seastar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: padding-box;
+        padding: 0px;
+        border: 3px solid rgb(255, 0, 0);
+        border-radius: 10px;
+        box-shadow: 13px 17px 6px #fd060659;
+    }
+
+    .title {
+        color: rgb(143, 188, 139);
+
+        font-size: 7vw;
+        margin: 12px auto 24px auto;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Righteous", cursive;
+        font-weight: 400;
+        -webkit-text-stroke: 1.6px rgb(46, 139, 87);
+    }
+
+    main.main {
+        display: block;
+        width: 93%;
+        height: auto;
+        margin: auto;
+        padding: 15px;
+        background-clip: padding-box;
+        font-size: 16px;
+        line-height: 2;
+        border: 2px dashed rgb(65, 105, 225);
+
+        border-radius: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .main p {
+        margin-bottom: 15px;
+    }
+
+    main.main a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    .intro {
+        border: 3px solid rgb(46, 139, 87);
+        background-color: rgb(143, 188, 139);
+        border-radius: 4px;
+        color: rgb(128, 0, 128);
+        padding: 6px;
+    }
+
+    .intro:hover,
+    .intro:focus {
+        background-color: #020000;
+        color: #ffffff;
+        border: none;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link:hover,
+    .link:focus {
+        background-color: #020000;
+        color: #ffffff;
+        padding: 6px;
+        border-radius: 3px;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link {
+        color: rgb(32, 178, 170);
+    }
+
+    #copyright {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 3vw;
+        word-wrap: break-word;
+        padding: 15px;
+    }
+
+    #copyright a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    footer {
+        background: #e6e2c8;
+        width: 80%;
+        max-width: 960px;
+        min-height: 3.75em;
+        margin: 2em auto;
+        padding: 1.25em;
+        border-radius: 0.313em;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        line-height: 1.5em;
+        color: #292929;
+    }
+
+    .ribbon a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 3.3vw;
+    }
+
+    .ribbon {
+        position: relative;
+        padding: 0 0.5em;
+        font-size: 2em;
+        margin: 0 0 0 -0.625em;
+        line-height: 1.875em;
+        color: #e6e2c8;
+        border-radius: 0 0.156em 0.156em 0;
+        background: rgb(123, 159, 199);
+        box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .ribbon:before,
+    .ribbon:after {
+        position: absolute;
+        content: "";
+        display: block;
+    }
+
+    .ribbon:before {
+        width: 0.469em;
+        height: 100%;
+        padding: 0 0 0.438em;
+        top: 0;
+        left: -0.469em;
+        background: inherit;
+        border-radius: 0.313em 0 0 0.313em;
+    }
+
+    .ribbon:after {
+        width: 0.313em;
+        height: 0.313em;
+        background: rgba(0, 0, 0, 0.35);
+        bottom: -0.313em;
+        left: -0.313em;
+        border-radius: 0.313em 0 0 0.313em;
+        box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    .sidepanel {
+        width: 0;
+
+        position: absolute;
+        z-index: 1;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 333px;
+        background-color: #ffffff;
+    }
+
+    .banner-img {
+        width: 100%;
+        max-width: 85vw;
+        max-height: 284px;
+        height: 100%;
+
+        background-size: cover;
+
+        background-image: url(../photos/Seastar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: padding-box;
+        padding: 0px;
+        border: 3px solid rgb(255, 0, 0);
+        border-radius: 10px;
+        box-shadow: 13px 17px 6px #fd060659;
+    }
+
+    .title {
+        color: rgb(143, 188, 139);
+
+        font-size: 7vw;
+        margin: 12px auto 24px auto;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Righteous", cursive;
+        font-weight: 400;
+        -webkit-text-stroke: 1.3px rgb(46, 139, 87);
+    }
+
+    main.main {
+        display: block;
+        width: 93%;
+        height: auto;
+        margin: auto;
+        padding: 15px;
+        background-clip: padding-box;
+        font-size: 16px;
+        line-height: 2;
+        border: 2px dashed rgb(65, 105, 225);
+
+        border-radius: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .main p {
+        margin-bottom: 15px;
+    }
+
+    main.main a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    #copyright {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 3.6vw;
+        word-wrap: break-word;
+        padding: 15px;
+    }
+
+    #copyright a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    #copyright a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    footer {
+        background: #e6e2c8;
+        width: 80%;
+        max-width: 960px;
+        min-height: 3.75em;
+        margin: 2em auto;
+        padding: 1.25em;
+        border-radius: 0.313em;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        line-height: 1.5em;
+        color: #292929;
+    }
+
+    .ribbon a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 3.6vw;
+    }
+
+    .ribbon {
+        position: relative;
+        padding: 0 0.5em;
+        font-size: 2em;
+        margin: 0 0 0 -0.625em;
+        line-height: 1.875em;
+        color: #e6e2c8;
+        border-radius: 0 0.156em 0.156em 0;
+        background: rgb(123, 159, 199);
+        box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .ribbon:before,
+    .ribbon:after {
+        position: absolute;
+        content: "";
+        display: block;
+    }
+
+    .ribbon:before {
+        width: 0.469em;
+        height: 100%;
+        padding: 0 0 0.438em;
+        top: 0;
+        left: -0.469em;
+        background: inherit;
+        border-radius: 0.313em 0 0 0.313em;
+    }
+
+    .ribbon:after {
+        width: 0.313em;
+        height: 0.313em;
+        background: rgba(0, 0, 0, 0.35);
+        bottom: -0.313em;
+        left: -0.313em;
+        border-radius: 0.313em 0 0 0.313em;
+        box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .sidepanel {
+        width: 0;
+
+        position: absolute;
+        z-index: 1;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 333px;
+        background-color: #ffffff;
+    }
+
+    .banner-img {
+        width: 100%;
+        max-width: 80vw;
+        height: 100%;
+        max-height: 255px;
+        background-size: cover;
+        background-image: url(../photos/Seastar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: padding-box;
+        padding: 0px;
+        border: 2px solid rgb(255, 0, 0);
+        border-radius: 10px;
+        box-shadow: 13px 17px 6px #fd060659;
+    }
+
+    .title {
+        color: rgb(143, 188, 139);
+
+        font-size: 7vw;
+        margin: 12px auto 24px auto;
+        padding: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Righteous", cursive;
+        font-weight: 400;
+        -webkit-text-stroke: 1px rgb(46, 139, 87);
+    }
+
+    main.main {
+        display: block;
+        width: 96%;
+        height: auto;
+        margin: auto;
+        padding: 12px;
+        background-clip: padding-box;
+        font-size: 15px;
+        line-height: 2;
+        border: 2px dashed rgb(65, 105, 225);
+
+        border-radius: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .main p {
+        margin-bottom: 15px;
+    }
+
+    main.main a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    #copyright {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 3.6vw;
+        word-wrap: break-word;
+        padding: 15px;
+    }
+
+    #copyright a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    #copyright a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    footer {
+        background: #e6e2c8;
+        width: 80%;
+        max-width: 960px;
+        min-height: 3.75em;
+        margin: 2em auto;
+        padding: 1.25em;
+        border-radius: 0.313em;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        line-height: 1.5em;
+        color: #292929;
+    }
+
+    .ribbon a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 3.6vw;
+    }
+
+    .ribbon {
+        position: relative;
+        padding: 0 0.5em;
+        font-size: 2em;
+        margin: 0 0 0 -0.625em;
+        line-height: 1.875em;
+        color: #e6e2c8;
+        border-radius: 0 0.156em 0.156em 0;
+        background: rgb(123, 159, 199);
+        box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .ribbon:before,
+    .ribbon:after {
+        position: absolute;
+        content: "";
+        display: block;
+    }
+
+    .ribbon:before {
+        width: 0.469em;
+        height: 100%;
+        padding: 0 0 0.438em;
+        top: 0;
+        left: -0.469em;
+        background: inherit;
+        border-radius: 0.313em 0 0 0.313em;
+    }
+
+    .ribbon:after {
+        width: 0.313em;
+        height: 0.313em;
+        background: rgba(0, 0, 0, 0.35);
+        bottom: -0.313em;
+        left: -0.313em;
+        border-radius: 0.313em 0 0 0.313em;
+        box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 319px) {
+    .sidepanel {
+        width: 0;
+
+        position: absolute;
+        z-index: 1;
+        height: 250px;
+        height: auto;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 21px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+
+        top: 0;
+
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .openbtn {
+        font-size: 14px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 260px;
+        background-color: #ffffff;
+    }
+
+    .banner-img {
+        width: 208px;
+        height: 156px;
+        background-size: cover;
+
+        background-image: url(../photos/375.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: padding-box;
+        padding: 0px;
+        border: 3px solid red;
+        border-radius: 10px;
+        box-shadow: 13px 17px 6px #fd060659;
+    }
+
+    .title {
+        color: rgb(143, 188, 139);
+
+        font-size: 17px;
+        margin: 12px auto 24px auto;
+        padding: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Righteous", cursive;
+        font-weight: 400;
+        -webkit-text-stroke: 0.7px rgb(46, 139, 87);
+    }
+
+    main.main {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 12px;
+        background-clip: padding-box;
+        font-size: 14px;
+        line-height: 1.4;
+        border: 2px dashed royalblue;
+
+        border-radius: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    main.main a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .intro {
+        border: 3px solid rgb(46, 139, 87);
+        background-color: rgb(143, 188, 139);
+        border-radius: 4px;
+        color: rgb(128, 0, 128);
+        padding: 6px;
+    }
+
+    .intro:hover,
+    .intro:focus {
+        background-color: #020000;
+        color: #ffffff;
+        border: none;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link:hover,
+    .link:focus {
+        background-color: #020000;
+        color: #ffffff;
+        padding: 6px;
+        border-radius: 3px;
+        transition: background 1.3s, color 1.3s;
+    }
+
+    b.link {
+        color: rgb(32, 178, 170);
+    }
+
+    #copyright {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    #copyright a {
+        color: rgb(128, 0, 128);
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        -webkit-transition: background 0.5s, color 0.5s;
+        -moz-transition: background 0.5s, color 0.5s;
+        -ms-transition: background 0.5s, color 0.5s;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    #copyright a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    main.main a:hover,
+    a:focus,
+    a:active {
+        color: rgb(0, 0, 255);
+        border-bottom-style: solid;
+    }
+
+    footer {
+        background: #e6e2c8;
+        width: 80%;
+        max-width: 960px;
+        min-height: 3.75em;
+        margin: 2em auto;
+        padding: 1.25em;
+        border-radius: 0.313em;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        line-height: 1.5em;
+        color: #292929;
+    }
+
+    .ribbon a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 9px;
+    }
+
+    .ribbon {
+        position: relative;
+        padding: 0 0.5em;
+        font-size: 2em;
+        margin: 0 0 0 -0.625em;
+        line-height: 1.875em;
+        color: #e6e2c8;
+        border-radius: 0 0.156em 0.156em 0;
+        background: rgb(123, 159, 199);
+        box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .ribbon:before,
+    .ribbon:after {
+        position: absolute;
+        content: "";
+        display: block;
+    }
+
+    .ribbon:before {
+        width: 0.469em;
+        height: 100%;
+        padding: 0 0 0.438em;
+        top: 0;
+        left: -0.469em;
+        background: inherit;
+        border-radius: 0.313em 0 0 0.313em;
+    }
+
+    .ribbon:after {
+        width: 0.313em;
+        height: 0.313em;
+        background: rgba(0, 0, 0, 0.35);
+        bottom: -0.313em;
+        left: -0.313em;
+        border-radius: 0.313em 0 0 0.313em;
+        box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+}
