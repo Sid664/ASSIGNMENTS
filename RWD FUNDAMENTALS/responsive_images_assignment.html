@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <title>Responsive Images Assignment | Siddhartha Ghosh Portfolio Site</title>
+
+    <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com" />
+
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta http-equiv="cleartype" content="on" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Assets/img/favicon/favicon-16x16.png"
+    />
+
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./Assets/css/normalize.min.css" />
+    <link rel="stylesheet" href="./Assets/css/setup.min.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya:400,900,400italic,700italic,700|Alegreya+Sans:900,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--[if lt IE 9]>
+      <script src="../js/vendor/respond.min.js"></script>
+    <![endif]-->
+    <script src="./Assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="./Assets/js/vendor/fontfaceobserver.js"></script>
+    <script type="text/javascript">
+      (function () {
+        document.documentElement.className += " wf-inactive";
+
+        // Optimization for Repeat Views
+        if (sessionStorage.foutFontsLoaded) {
+          document.documentElement.classList.remove("wf-inactive");
+          document.documentElement.classList.add("wf-active");
+          return;
+        }
+
+        var fontA = new FontFaceObserver("Alegreya", {
+          weight: 400,
+          style: "normal",
+        });
+        var fontB = new FontFaceObserver("Alegreya", {
+          weight: 700,
+          style: "normal",
+        });
+        var fontC = new FontFaceObserver("Alegreya", {
+          weight: 900,
+          style: "normal",
+        });
+        var fontD = new FontFaceObserver("Alegreya", {
+          weight: 400,
+          style: "italic",
+        });
+        var fontE = new FontFaceObserver("Alegreya", {
+          weight: 700,
+          style: "italic",
+        });
+        var fontF = new FontFaceObserver("Alegreya Sans", {
+          weight: 400,
+          style: "normal",
+        });
+        var fontG = new FontFaceObserver("Alegreya Sans", {
+          weight: 900,
+          style: "normal",
+        });
+
+        Promise.all([
+          fontA.load(),
+          fontB.load(),
+          fontC.load(),
+          fontD.load(),
+          fontE.load(),
+          fontF.load(),
+          fontG.load(),
+        ]).then(function () {
+          document.documentElement.classList.remove("wf-inactive");
+          document.documentElement.classList.add("wf-active");
+
+          // Optimization for Repeat Views
+          sessionStorage.foutFontsLoaded = true;
+        });
+      })();
+    </script>
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="./Assets/js/vendor/picturefill.min.js" async></script>
+  </head>
+
+  <body>
+    <!-- Add your site or application content here -->
+    <header role="banner" class="banner clearfix" id="banner">
+      <div class="section-content">
+        <div class="branding clearfix">
+          <figure id="logo">
+            <a href="index_final.html" title="Return to Home Page"
+              ><img src="./Assets/img/SG-logo.jpg" alt="my logo"
+            /></a>
+          </figure>
+          <h1><a href="#" title="Return to Home Page">Siddhartha Ghosh</a></h1>
+          <h2>user experience designer</h2>
+        </div>
+      </div>
+    </header>
+    <nav role="navigation" class="nav clearfix main-nav" id="nav">
+      <a
+        href="#nav"
+        aria-controls="nav"
+        class="nav-menu-toggle control"
+        id="menu-toggle"
+        >Menu</a
+      >
+      <div class="main-nav-inner">
+        <ul class="nav-menu">
+          <li class="menu-item"><a href="#">About</a></li>
+          <li class="menu-item"><a href="#">Resume</a></li>
+          <li class="menu-item">
+            <a href="#">Portfolio</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Project 1</a></li>
+              <li class="menu-item"><a href="#">Project 2</a></li>
+              <li class="menu-item"><a href="#">Project 3</a></li>
+              <li class="menu-item"><a href="#">Project 4</a></li>
+              <li class="menu-item"><a href="#">Project 5</a></li>
+              <li class="menu-item"><a href="#">Project 6</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Contact</a></li>
+        </ul>
+        <!--/.nav-menu-->
+      </div>
+    </nav>
+
+    <main class="content-area clearfix">
+      <div class="section-content">
+        <h1>Responsive Images</h1>
+
+        <figure>
+          <picture>
+            <img
+              sizes="(min-width: 36em) 80vw, 100vw"
+              srcset="
+                ./Assets/img/misty_sunrise_700.jpg   700w,
+                ./Assets/img/misty_sunrise_1000.jpg 1000w,
+                ./Assets/img/misty_sunrise_1500.jpg 1500w,
+                ./Assets/img/misty_sunrise_2000.jpg 2000w
+              "
+              src="./Assets/img/main.jpg"
+              alt="Sunrise over Turner Reservoir"
+            />
+          </picture>
+          <figcaption>Sunrise over Turner Reservoir</figcaption>
+        </figure>
+
+        
+
+        <figure>
+          <picture>
+            <source
+              srcset="./Assets/img/tristan_and_tillie_landscape_1000.jpg"
+              media="(min-width: 1001px)"
+            />
+
+            <source
+              srcset="./Assets/img/tristan_and_tillie_landscape_1500.jpg"
+              media="(min-width: 1501px)"
+            />
+
+            <source
+              srcset="./Assets/img/tristan_and_tillie_landscape_2000.jpg"
+              media="(min-width: 2000px)"
+            />
+
+            <img
+              src="./Assets/img/tristan_and_tillie_landscape_700.jpg"
+              alt="Tristan contemplates a dip"
+            />
+          </picture>
+          <figcaption>Tristan contemplates a dip</figcaption>
+        </figure>
+
+        <p>
+          Once more. Say you are in the country; in some high land of lakes.
+          Take almost any path you please, and ten to one it carries you down in
+          a dale, and leaves you there by a pool in the stream. There is magic
+          in it. Let the most absent-minded of men be plunged in his deepest
+          reveries—stand that man on his legs, set his feet a-going, and he will
+          infallibly lead you to water, if water there be in all that region.
+          Should you ever be athirst in the great American desert, try this
+          experiment, if your caravan happen to be supplied with a metaphysical
+          professor. Yes, as every one knows, meditation and water are wedded
+          for ever.
+        </p>
+      </div>
+      <!--/.section-content-->
+    </main>
+    <footer id="footer" class="footer clearfix" role="contentinfo">
+      <div class="section-content">
+        <div class="footer-contact h-card">
+          <p>
+            <strong class="name p-name">Siddhartha Ghosh</strong><br />
+            User Experience Designer
+          </p>
+          <p>
+            e: <a href="mailto:#" class="u-email">siddhartha@ghosh.design</a
+            ><br />
+            m: <span class="p-tel">401.555.1212</span>
+          </p>
+        </div>
+        <nav id="nav-footer" class="nav-footer" role="navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <!--/.nav-footer-->
+        <div class="footer-social-links">
+          <ul>
+            <li>
+              <a href="http://www.linkedin.com"
+                ><i class="fa fa-linkedin-square"></i> LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="http://twitter.com"
+                ><i class="fa fa-twitter-square"></i> Twitter</a
+              >
+            </li>
+            <li>
+              <a href="http://github.com"
+                ><i class="fa fa-github-square"></i> Github</a
+              >
+            </li>
+            <li>
+              <a href="http://instagram.com"
+                ><i class="fa fa-instagram"></i> Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--/.section-content-->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js" defer></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="./Assets/js/vendor/jquery-1.12.0.min.js" defer><\/script>'
+        );
+    </script>
+    <script src="./Assets/js/plugins.js" defer></script>
+
+    <!-- Widowtamer -->
+    <script src="./Assets/js/vendor/widowtamer-min.js" defer></script>
+
+    <!-- classList polyfill -->
+    <script src="./Assets/js/vendor/classlist_polyfill.min.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
