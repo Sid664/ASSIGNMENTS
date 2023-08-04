@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery :: Lesson 3 Product Shelf</title>
+
+		<!-- Tip: Start src & href links with no slash for relative paths. -->
+		<script type="text/javascript" src="script/jquery-3.7.0.js"></script>
+		<script src="script/jquery.easing.min.js"></script>
+		<script src="script/jquery.cycle.all.js"></script>
+		
+		<script src="carosel/carosel-1.0.js"></script>
+
+		<link rel="stylesheet" href="carosel/carosel.css"/>
+
+		
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+				$('ul.shelf > li').makeCarosel('.carousel-wrapper', '.nav-arrow-left', '.nav-arrow-right', '.shelf-wrapper');
+			});
+
+		</script>
+
+	</head>
+
+	<body>
+		<h1>The Poster Store</h1>
+		<div class="shelf-wrapper">
+			<h2 class="category">Flowers</h2>
+			<div class="nav-arrow nav-arrow-left">&#xab;</div>
+			<div class="carousel-wrapper">
+				<ul class="shelf" id="shelf-flowers-1">
+					<li class="shelf-item shelf-position-0" id="shelf-item-0">
+						<div class="meta">In Stock - $14.95</div>
+					</li>
+					<li class="shelf-item shelf-position-1" id="shelf-item-1">
+						<div class="meta">In Stock - $12.95</div>
+					</li>
+					<li class="shelf-item shelf-position-2" id="shelf-item-2">
+						<div class="meta sold-out">Sold Out - $8.95</div>
+					</li>
+					<li class="shelf-item shelf-position-3" id="shelf-item-3">
+						<div class="meta">In Stock - $18.95</div>
+					</li>
+					<li class="shelf-item shelf-position-4" id="shelf-item-4">
+						<div class="meta">In Stock - $4.50</div>
+					</li>
+					<li class="shelf-item shelf-position-5" id="shelf-item-5">
+						<div class="meta">In Stock - $12.95</div>
+					</li>
+				</ul>
+				<ul class="shelf" id="shelf-flowers-2">
+					<li class="shelf-item shelf-position-0" id="shelf-item-6">
+						<div class="meta">In Stock - $14.95</div>
+					</li>
+					<li class="shelf-item shelf-position-1" id="shelf-item-7">
+						<div class="meta sold-out">Sold Out - $8.95</div>
+					</li>
+					<li class="shelf-item shelf-position-2" id="shelf-item-8">
+						<div class="meta">In Stock - $12.95</div>
+					</li>
+					<li class="shelf-item shelf-position-3" id="shelf-item-9">
+						<div class="meta">In Stock - $18.95</div>
+					</li>
+					<li class="shelf-item shelf-position-4" id="shelf-item-10">
+						<div class="meta">In Stock - $4.50</div>
+					</li>
+					<li class="shelf-item shelf-position-5" id="shelf-item-11">
+						<div class="meta">In Stock - $12.95</div>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-arrow nav-arrow-right">&#xbb;</div>
+		</div>
+		<div id="footer">&copy;2023 Gymnasium Posters Inc.</div>
+	</body>
+</html>
