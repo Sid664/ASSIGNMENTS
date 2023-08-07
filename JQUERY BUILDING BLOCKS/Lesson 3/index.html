@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery :: Lesson 3 portfolio</title>
+
+	<!-- Viewport meta tag to prevent iPhone from scaling our page -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="style.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	
+
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"
+		integrity="sha512-T+Pw5KwLzU1wmH5slAFcNK8lstMe+BBEi1qLkM1XIWEPZzcNmuiuUKIdq8ATSUFxx138gAIGsKaq8/ljyElMqQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script>
+		$( document ).ready( function () {
+			$( '#slideshow' ).cycle();
+
+			
+
+			var $slideShow = $( '#slideshow' );
+
+			$slideShow.cycle( {
+				continuous: 'true',
+				speed: '700'
+			} )
+
+			$slideShow.hover(
+				function () { $( this ).cycle( 'pause' ) },
+				function () { $( this ).cycle( 'resume' ) },
+			)
+		} )
+	</script>
+
+</head>
+
+<body lang="en">
+	<div id="container-nav">
+		<h3 id="page-title">Pause-on-hover to the photo slideshow</h3>
+	</div>
+	<div id="container-header">
+		<div id="masthead">
+			<div id="slideshow">
+				<div class="image-wrapper">
+					<img title="Monkey" src="http://farm9.staticflickr.com/8312/7975953800_39e56f1728_m.jpg"
+						class="gallery-item"></img>
+				</div>
+				<div class="image-wrapper">
+					<img title="Cat" src="http://farm6.staticflickr.com/5054/5452598947_576b1ccd38_m.jpg"
+						class="gallery-item"></img>
+				</div>
+				<div class="image-wrapper">
+					<img title="Cup cake" src="http://farm3.staticflickr.com/2783/4099570311_d9c1a8de2b_m.jpg"
+						class="gallery-item"></img>
+				</div>
+				<div class="image-wrapper">
+					<img title="Multi-Tool Pocket Knife"
+						src="http://farm9.staticflickr.com/8534/8684730377_08af1e4eb1_n.jpg" class="gallery-item"></img>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="container-footer">
+		<footer id="colophon" class="wrapper">
+			<p>©2023 all rights reserved.</p>
+		</footer>
+	</div>
+</body>
+
+</html>

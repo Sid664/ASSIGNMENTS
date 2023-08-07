@@ -1,0 +1,166 @@
+/********************************************
+	Tag Resets
+********************************************/
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/********************************************
+	Normalize CSS
+	http://necolas.github.com/normalize.css/
+********************************************/
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+  display: block;
+}
+
+/* ******************************************
+	Custom Styles
+****************************************** */
+
+/*	  For details on font-size:100% see here: 
+      http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/ 
+	  
+	  For details on line-height:1 see here:
+      http://meyerweb.com/eric/thoughts/2008/05/06/line-height-abnormal/ 
+
+	  For details on text-size-adjust:100% see here:
+	  https://developer.mozilla.org/en-US/docs/CSS/text-size-adjust 
+*/
+
+html {
+  font-size: 100%;
+  line-height: 1;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-size: 1.382em;
+  line-height: 1.223;
+  font-weight: bold;
+}
+
+#masthead {
+  border: 4px solid green;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: 24px;
+}
+
+#container-header {
+  background: #352a38;
+  background-color: #000000;
+
+  width: 100%;
+  height: 321px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-footer {
+  padding: 8px 8px;
+  background: #352a38;
+
+  color: #eee;
+  font-weight: 100;
+}
+
+img {
+  max-width: 100%;
+}
+
+#masthead {
+  margin: 0 15px;
+  max-width: 550px;
+}
+
+/*
+Cycle.
+*/
+#slideshow {
+  width: 250px;
+  height: 240px;
+  line-height: 240px;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid rgb(255, 255, 255);
+}
+#slideshow > div {
+  width: 250px;
+}
+#slideshow > div > img {
+  margin: auto;
+  display: block;
+}
+
+#page-title {
+  background-color: rgba(255, 153, 0, 0.774);
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
